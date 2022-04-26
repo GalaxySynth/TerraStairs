@@ -1,13 +1,11 @@
 package com.galaxysynth.terrastairs.block;
 
 import com.galaxysynth.terrastairsinit;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.SlabBlock;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -20,11 +18,11 @@ public class TerraStairsBlocks {
     public static final Block ROOTED_DIRT_SLAB = new DirtSlabBlock(ROOTED_DIRT.getDefaultState(), AbstractBlock.Settings.copy(ROOTED_DIRT).strength(0.5f));
     public static final Block COARSE_DIRT_STAIRS = new DirtStairsBlock(Blocks.COARSE_DIRT.getDefaultState(), net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings.copy(Blocks.COARSE_DIRT).strength(0.5f));
     public static final Block COARSE_DIRT_SLAB = new SlabBlock(net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings.copy(Blocks.COARSE_DIRT).strength(0.5f));
-    public static final Block GRASS_STAIRS = new GrassStairsBlock(GRASS_BLOCK.getDefaultState(), AbstractBlock.Settings.copy(GRASS_BLOCK).strength(0.5f));
-    public static final Block GRASS_SLAB = new GrassSlabBlock(net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings.copy(GRASS_BLOCK).strength(0.6f));
+    public static final Block GRASS_STAIRS = new TerraStairsBlock(DIRT.getDefaultState(), AbstractBlock.Settings.of(Material.SOLID_ORGANIC).strength(0.6F).sounds(BlockSoundGroup.GRASS));
+    public static final Block GRASS_SLAB = new GrassSlabBlock(net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings.copy(DIRT).strength(0.6f).sounds(BlockSoundGroup.GRASS));
     public static final Block DIRT_PATH_STAIRS = new DirtPathStairsBlock(Blocks.DIRT_PATH.getDefaultState(), net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings.copy(Blocks.DIRT_PATH).strength(0.5f));
     public static final Block DIRT_PATH_SLAB = new DirtPathSlabBlock(net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings.copy(Blocks.DIRT_PATH).strength(0.5f));
-    public static final Block MYCELIUM_STAIRS = new GrassStairsBlock(MYCELIUM.getDefaultState(), AbstractBlock.Settings.copy(GRASS_BLOCK).strength(0.5f));
+    public static final Block MYCELIUM_STAIRS = new TerraStairsBlock(MYCELIUM.getDefaultState(), AbstractBlock.Settings.copy(MYCELIUM).strength(0.5f));
     public static final Block MYCELIUM_SLAB = new GrassSlabBlock(net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings.copy(Blocks.MYCELIUM).strength(0.5f));
     public static final Block PODZOL_STAIRS = new DirtStairsBlock(Blocks.PODZOL.getDefaultState(), net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings.copy(Blocks.PODZOL).strength(0.5f));
     public static final Block PODZOL_SLAB = new SlabBlock(net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings.copy(Blocks.PODZOL).strength(0.5f));
