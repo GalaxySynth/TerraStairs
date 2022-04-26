@@ -6,6 +6,5 @@ public class TerraStairsBlock extends StairsBlock {
 
     TerraStairsBlock(BlockState baseBlockState, Settings settings) {
         super(baseBlockState, settings);
-
-}
+    }
 }

@@ -1,6 +1,5 @@
 package com.galaxysynth.terrastairs.block;
 
-import java.util.stream.IntStream;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.ShapeContext;
@@ -11,6 +10,8 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.WorldAccess;
+
+import java.util.stream.IntStream;
 
 public class DirtPathStairsBlock extends DirtStairsBlock {
     protected static final VoxelShape TOP_SHAPE;

@@ -16,10 +16,8 @@ import static net.minecraft.block.Blocks.*;
 public class TerraStairsBlocks {
     public static final Block DIRT_STAIRS = new DirtStairsBlock(Blocks.DIRT.getDefaultState(), net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings.copy(Blocks.DIRT).strength(0.5f));
     public static final Block DIRT_SLAB = new DirtSlabBlock(DIRT.getDefaultState(), AbstractBlock.Settings.copy(DIRT).strength(0.5f));
-
-    public static final Block ROOTED_DIRT_STAIRS = new DirtStairsBlock(Blocks.DIRT.getDefaultState(), net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings.copy(Blocks.ROOTED_DIRT).strength(0.5f));
-
-    public static final Block ROOTED_DIRT_SLAB = new DirtSlabBlock(DIRT.getDefaultState(), AbstractBlock.Settings.copy(ROOTED_DIRT).strength(0.5f));
+    public static final Block ROOTED_DIRT_STAIRS = new DirtStairsBlock(Blocks.ROOTED_DIRT.getDefaultState(), net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings.copy(Blocks.ROOTED_DIRT).strength(0.5f));
+    public static final Block ROOTED_DIRT_SLAB = new DirtSlabBlock(ROOTED_DIRT.getDefaultState(), AbstractBlock.Settings.copy(ROOTED_DIRT).strength(0.5f));
     public static final Block COARSE_DIRT_STAIRS = new DirtStairsBlock(Blocks.COARSE_DIRT.getDefaultState(), net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings.copy(Blocks.COARSE_DIRT).strength(0.5f));
     public static final Block COARSE_DIRT_SLAB = new SlabBlock(net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings.copy(Blocks.COARSE_DIRT).strength(0.5f));
     public static final Block GRASS_STAIRS = new GrassStairsBlock(GRASS_BLOCK.getDefaultState(), AbstractBlock.Settings.copy(GRASS_BLOCK).strength(0.5f));
