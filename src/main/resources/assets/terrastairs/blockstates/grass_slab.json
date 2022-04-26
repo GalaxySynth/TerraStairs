@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "terrastairs:block/grass_slab" },
+        "type=top": { "model": "terrastairs:block/grass_slab_top" },
+        "type=double": { "model": "minecraft:block/grass_block" }
+    }
+}

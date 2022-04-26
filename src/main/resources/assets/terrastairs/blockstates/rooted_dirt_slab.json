@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "terrastairs:block/rooted_dirt_slab" },
+        "type=top": { "model": "terrastairs:block/rooted_dirt_slab_top" },
+        "type=double": { "model": "minecraft:block/rooted_dirt" }
+    }
+}

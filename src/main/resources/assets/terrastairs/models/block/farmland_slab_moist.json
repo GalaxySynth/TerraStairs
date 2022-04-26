@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "minecraft:block/dirt",
+    "dirt": "minecraft:block/dirt",
+    "top": "minecraft:block/farmland_moist",
+    "side": "minecraft:block/dirt"
+  }
+}
